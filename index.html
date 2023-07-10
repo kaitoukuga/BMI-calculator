@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>BMI Calculator</title>
 </head>
 <body>
-    <div class="container">
+  <header>
     <h1>BMI Calculator</h1>
-    <div class="input-container">
-      <label for="height">Height:</label>
-      <input type="number" id="height" placeholder="Height (cm)">
-    </div>
-    <div class="input-container">
-      <label for="weight">Weight:</label>
-      <input type="number" id="weight" placeholder="Weight (kg)">
-    </div>
-    <button onclick="calculateBMI()">Calculate</button>
-    <div id="result"></div>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Body Mass Index (BMI)</h2>
+      <p>Body Mass Index is a simple calculation using a person's height and weight.
+        The formula is BMI = kg/m<sup>2</sup> where kg is a person's weight in kilograms and m<sup>2</sup> is their height in metres squared.</p>
+      <p style="text-align: center;">A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. <br>
+        BMI applies to most adults 18-65 years.</p>
+      <div class="input-container">
+        <label for="height">Height:</label>
+        <input type="number" id="height" placeholder="Height (cm)">
+      </div>
+      <div class="input-container">
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+      </div>
+      <button onclick="calculateBMI()">Calculate</button>
+      <div id="result"></div>
   </div>
+  </main>
+  <footer>
+    This project made by Kaitou.
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

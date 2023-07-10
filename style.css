@@ -1,47 +1,86 @@
+html, body {
+  height: 100%;
+}
+
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(6, 255, 97);
+  text-align: center;
+  padding: 35px 0px;
+  width: 100%;
+  margin-left: -10px; 
+  margin-right: -10px; 
+  margin-top: -8px;
+  padding-left: 10px; 
+  padding-right: 10px;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+.container {
+  max-width: 45%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 15px rgba(89, 114, 160, 0.774);
+  transition-duration: 0.8s;
+}
   
-  .container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
+.container p {
+  text-align: justify;
+  text-indent: 15px;
+}
+
+h1 {
+  color: #333;
+}
   
-  h1 {
-    color: #333;
-  }
+.input-container {
+  margin-bottom: 10px;
+  text-align: left;
+}
   
-  .input-container {
-    margin-bottom: 10px;
-    text-align: left;
-  }
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
   
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
+button {
+  background-color: #32dea2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
   
-  button {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #result {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(6, 255, 97);
+  margin-top: 20px;
+  padding: 10px 10px 10px 30px;
+  text-align: center;
+}
